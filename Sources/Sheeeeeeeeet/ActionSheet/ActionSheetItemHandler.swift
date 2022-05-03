@@ -57,29 +57,83 @@ open class ActionSheetItemHandler: NSObject, UITableViewDataSource, UITableViewD
     }
     
     open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        items.count
+        switch itemType {
+        case .items:
+            var count = items.count
+            if actionSheet?.headerView != nil {
+                count += 1
+            }
+            
+            return count
+        case .buttons:
+            return items.count
+        }
+
     }
     
     open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let item = self.item(at: indexPath) else { return UITableViewCell(frame: .zero) }
-        let cell = item.actionSheetCell(for: tableView)
-        cell.refresh(with: item)
-        return cell
+        var mutatedIndexPath = indexPath
+
+        switch itemType {
+        case .items:
+            if let headerView = actionSheet?.headerView {
+                if mutatedIndexPath.row == 0 {
+                    let cell = UITableViewCell()
+                    cell.contentView.addSubview(headerView, fill: true)
+                    cell.selectionStyle = .none
+                    cell.separatorInset = .zero
+                    return cell
+                }
+                
+                mutatedIndexPath = IndexPath(row: mutatedIndexPath.row - 1, section: mutatedIndexPath.section)
+            }
+            
+            fallthrough
+        case .buttons:
+            guard let item = self.item(at: mutatedIndexPath) else { return UITableViewCell(frame: .zero) }
+            let cell = item.actionSheetCell(for: tableView)
+            cell.refresh(with: item)
+            return cell
+        }
     }
     
     open func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        guard let item = self.item(at: indexPath) else { return 0 }
-        return CGFloat(item.actionSheetCellHeight)
+        var mutatedIndexPath = indexPath
+        switch itemType {
+        case .items:
+            if let headerView = actionSheet?.headerView {
+                if indexPath.row == 0 {
+                    return headerView.frame.height
+                }
+                
+                mutatedIndexPath = IndexPath(row: indexPath.row - 1, section: indexPath.section)
+            }
+            
+            fallthrough
+        case .buttons:
+            guard let item = self.item(at: mutatedIndexPath) else { return 0 }
+            return CGFloat(item.actionSheetCellHeight)
+        }
     }
     
     
     // MARK: - UITableViewDelegate
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let item = self.item(at: indexPath) else { return }
-        tableView.deselectRow(at: indexPath, animated: true)
-        guard let sheet = actionSheet else { return }
-        item.handleSelection(in: sheet.menu)
-        sheet.handleTap(on: item)
+        var mutatedIndexPath = indexPath
+        switch itemType {
+        case .items:
+            if let headerView = actionSheet?.headerView {
+                mutatedIndexPath = IndexPath(row: indexPath.row - 1, section: indexPath.section)
+            }
+            
+            fallthrough
+        case .buttons:
+            guard let item = self.item(at: mutatedIndexPath) else { return }
+            tableView.deselectRow(at: mutatedIndexPath, animated: true)
+            guard let sheet = actionSheet else { return }
+            item.handleSelection(in: sheet.menu)
+            sheet.handleTap(on: item)
+        }
     }
 }

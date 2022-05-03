@@ -121,7 +121,6 @@ open class ActionSheet: UIViewController {
     open func setupViews() {
         backgroundView.setup(in: self)
         stackView.setup(in: self)
-        headerViewContainer.setup(in: self)
         itemsTableViewHeight = itemsTableView.setup(in: self, itemHandler: itemHandler, heightPriority: 900)
         buttonsTableViewHeight = buttonsTableView.setup(in: self, itemHandler: buttonHandler)
     }
@@ -137,6 +136,7 @@ open class ActionSheet: UIViewController {
         if let title = menu.title {
             items.insert(MenuTitle(title: title), at: 0)
         }
+        self.headerView = menu.headerView
         setup(items: items)
     }
     
@@ -188,7 +188,6 @@ open class ActionSheet: UIViewController {
     
     public var intrinsicContentHeight: Double { itemsHeight + buttonsHeight + sectionMargins }
     
-    let headerViewContainer = ActionSheetHeaderContainerView()
     var itemsTableView = ActionSheetItemTableView()
     var buttonsTableView = ActionSheetButtonTableView()
     
@@ -197,21 +196,18 @@ open class ActionSheet: UIViewController {
     var rightMargin: NSLayoutConstraint!
     var bottomMargin: NSLayoutConstraint!
     
-    var headerViewContainerHeight: NSLayoutConstraint!
     var itemsTableViewHeight: NSLayoutConstraint!
     var buttonsTableViewHeight: NSLayoutConstraint!
-    
-    
-    // MARK: - Header Properties
-    
-    open var headerView: UIView?
     
     
     // MARK: - Item Properties
     
     public internal(set) var items = [MenuItem]()
+    public internal(set) var headerView: UIView?
     
-    public var itemsHeight: Double { totalHeight(for: items) }
+    public var itemsHeight: Double {
+        return totalHeight(for: items) + Double(headerView?.frame.height ?? 0)
+    }
     
     public lazy var itemHandler = ActionSheetItemHandler(actionSheet: self, itemType: .items)
     
@@ -250,28 +246,14 @@ open class ActionSheet: UIViewController {
     // MARK: - Refresh Functions
     
     open func refresh() {
-        refreshHeader()
-        refreshHeaderVisibility()
+        // Force viewDidLoad
+        _ = self.view.frame.self
         refreshItems()
         refreshButtons()
         stackView.spacing = sectionMargins
         presenter?.refreshActionSheet()
     }
     
-    open func refreshHeader() {
-        let height = headerView?.frame.height ?? 0
-        headerViewContainerHeight?.constant = height
-        guard let view = headerView else { return }
-        headerViewContainer.addSubview(view, fill: true)
-    }
-    
-    open func refreshHeaderVisibility() {
-        let size = view.frame.size
-        let hasHeader = headerView != nil
-        let isPortrait = size.height > size.width
-        let isVisible = hasHeader && (isPortrait || headerConfiguration.isVisibleInLandscape)
-        headerViewContainer.isHidden = !isVisible
-    }
     
     open func refreshItems() {
         itemsTableView.tableFooterView = createFooter()

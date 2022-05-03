@@ -66,7 +66,6 @@ open class ActionSheetAppearance {
     */
     open func applyColors() {
         background.backgroundColor = .sheetColor(.overlay)
-        header.backgroundColor = .clear
         table.separatorColor = .sheetColor(.separator)
         table.backgroundColor = .sheetColor(.background)
         
@@ -103,7 +102,6 @@ open class ActionSheetAppearance {
      Apply action sheet views corner radii.
     */
     open func applyCornerRadii() {
-        header.cornerRadius = 10
         table.cornerRadius = 10
     }
     
@@ -164,9 +162,7 @@ open class ActionSheetAppearance {
 public extension ActionSheetAppearance {
     
     var background: ActionSheetBackgroundView { ActionSheetBackgroundView.appearance() }
-    
-    var header: ActionSheetHeaderContainerView { ActionSheetHeaderContainerView.appearance() }
-    
+        
     var table: ActionSheetTableView { ActionSheetTableView.appearance() }
     var itemsTable: ActionSheetItemTableView { ActionSheetItemTableView.appearance() }
     var buttonsTable: ActionSheetButtonTableView { ActionSheetButtonTableView.appearance() }

@@ -61,18 +61,8 @@ open class ActionSheetPopoverPresenter: ActionSheetPresenterBase {
         sheet.items = popoverItems(for: sheet)
         sheet.buttons = []
         sheet.stackView.spacing = 0
-        sheet.headerViewContainer.cornerRadius = 0
-        sheet.headerViewContainer.isHidden = !sheet.headerConfiguration.isVisibleInPopover
         sheet.buttonsTableView.isHidden = true
-        refreshActionSheetHeight(for: sheet)
         refreshPopoverBackgroundColor()
-    }
-    
-    func refreshActionSheetHeight(for sheet: ActionSheet) {
-        let itemHeight = CGFloat(sheet.itemsHeight)
-        let isHeaderHidden = sheet.headerViewContainer.isHidden
-        let headerHeight = isHeaderHidden ? 0 : sheet.headerView?.frame.height ?? 0
-        sheet.preferredContentSize.height = itemHeight + headerHeight
     }
     
     open func refreshPopoverBackgroundColor() {

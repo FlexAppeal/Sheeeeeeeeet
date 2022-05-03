@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 /**
  This struct represents a menu that consists of items, which
@@ -20,15 +21,18 @@ open class Menu {
     
     public init(
         title: String? = nil,
-        items: [MenuItem]) {
+        items: [MenuItem],
+        headerView: UIView?) {
         self.title = title
         self.items = items
+        self.headerView = headerView
     }
     
     public typealias ItemAction = (MenuItem) -> ()
 
     public let title: String?
     public let items: [MenuItem]
+    public let headerView: UIView?
 }
 
 extension Menu: MenuCreator {
