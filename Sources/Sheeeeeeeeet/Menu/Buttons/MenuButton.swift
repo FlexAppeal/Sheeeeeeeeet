@@ -25,6 +25,11 @@ open class MenuButton: MenuItem {
         super.init(title: title, value: type)
     }
     
+    public init(title: String, value: Any? = nil) {
+        self.type = .other
+        super.init(title: title, value: value)
+    }
+    
     public enum ButtonType: Equatable {
         case ok, cancel, other
     }

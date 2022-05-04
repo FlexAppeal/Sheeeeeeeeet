@@ -15,11 +15,6 @@ import UIKit
  The `value` of a cancel button is `.cancel`.
  */
 open class CancelButton: MenuButton {
-    
-    public init(title: String) {
-        super.init(title: title, type: .cancel)
-    }
-    
     override var canBeUsedInAlertController: Bool { true }
     override var canBeUsedInContextMenu: Bool { false }
     override var shouldBeIgnoredByContextMenu: Bool { return true }
