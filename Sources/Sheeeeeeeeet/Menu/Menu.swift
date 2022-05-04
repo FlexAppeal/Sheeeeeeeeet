@@ -22,7 +22,7 @@ open class Menu {
     public init(
         title: String? = nil,
         items: [MenuItem],
-        headerView: UIView?) {
+        headerView: UIView? = nil) {
         self.title = title
         self.items = items
         self.headerView = headerView

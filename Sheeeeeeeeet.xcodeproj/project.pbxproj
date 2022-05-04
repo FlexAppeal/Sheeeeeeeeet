@@ -11,7 +11,6 @@
 		8422CB60239DAF5600251D31 /* ActionSheetPopoverPresenter+PresentationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB5F239DAF5600251D31 /* ActionSheetPopoverPresenter+PresentationDelegate.swift */; };
 		8422CB72239DC85300251D31 /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB6D239DC6DA00251D31 /* ContextMenu.swift */; };
 		8422CB73239DC85900251D31 /* ContextMenu+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB6B239DC6B100251D31 /* ContextMenu+Configuration.swift */; };
-		8422CB76239DCBFD00251D31 /* Menu+Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB74239DCBEB00251D31 /* Menu+Deprecations.swift */; };
 		8422CB7A239E1FB600251D31 /* DestructiveItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB78239E1E6800251D31 /* DestructiveItem.swift */; };
 		8422CB7D239E20E100251D31 /* DestructiveItem+ActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422CB7B239E209C00251D31 /* DestructiveItem+ActionSheet.swift */; };
 		847E09ED239DA5E70058179D /* ActionSheetPresenterBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847E09EC239DA5E70058179D /* ActionSheetPresenterBase.swift */; };
@@ -95,28 +94,19 @@
 /* Begin PBXFileReference section */
 		8405566E23527E1E0064EC7D /* ActionSheetItemCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItemCells.swift; sourceTree = "<group>"; };
 		8422CB5F239DAF5600251D31 /* ActionSheetPopoverPresenter+PresentationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheetPopoverPresenter+PresentationDelegate.swift"; sourceTree = "<group>"; };
-		8422CB61239DAF9B00251D31 /* ActionSheetPopoverPresenter+PresentationDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheetPopoverPresenter+PresentationDelegateTests.swift"; sourceTree = "<group>"; };
-		8422CB64239DB6F600251D31 /* ActionSheetPresenterBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPresenterBaseTests.swift; sourceTree = "<group>"; };
 		8422CB6B239DC6B100251D31 /* ContextMenu+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContextMenu+Configuration.swift"; sourceTree = "<group>"; };
 		8422CB6D239DC6DA00251D31 /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
-		8422CB6F239DC81800251D31 /* ContextMenu+ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContextMenu+ConfigurationTests.swift"; sourceTree = "<group>"; };
-		8422CB74239DCBEB00251D31 /* Menu+Deprecations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+Deprecations.swift"; sourceTree = "<group>"; };
 		8422CB78239E1E6800251D31 /* DestructiveItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveItem.swift; sourceTree = "<group>"; };
 		8422CB7B239E209C00251D31 /* DestructiveItem+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DestructiveItem+ActionSheet.swift"; sourceTree = "<group>"; };
-		8422CB80239E21FC00251D31 /* DestructiveItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DestructiveItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
 		847E09EC239DA5E70058179D /* ActionSheetPresenterBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPresenterBase.swift; sourceTree = "<group>"; };
 		84A24ECA236C64F200DB060C /* SecondaryActionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionItem.swift; sourceTree = "<group>"; };
-		84A24ECC236C66CD00DB060C /* SecondaryActionItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryActionItemTests.swift; sourceTree = "<group>"; };
 		84A24ECF236C6C5B00DB060C /* SecondaryActionItem+ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondaryActionItem+ActionSheet.swift"; sourceTree = "<group>"; };
 		84A24ED1236C6CA200DB060C /* ActionSheetSecondaryActionItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetSecondaryActionItemCell.swift; sourceTree = "<group>"; };
-		84A24ED3236C6DB500DB060C /* ActionSheetSecondaryActionItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetSecondaryActionItemTests.swift; sourceTree = "<group>"; };
-		84A24ED7236C6FAF00DB060C /* SecondaryActionItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondaryActionItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
 		84A24EDC236C84D900DB060C /* MenuCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCreator.swift; sourceTree = "<group>"; };
 		84BDF8B22347D43F00D35F93 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84BDF8B32347D43F00D35F93 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		84F64BA0239D8FEF000290D1 /* ActionSheet+Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Header.swift"; sourceTree = "<group>"; };
 		84F64BA2239D9630000290D1 /* ActionSheet+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Configuration.swift"; sourceTree = "<group>"; };
-		84F64BA4239D99D6000290D1 /* ActionSheet+ConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+ConfigurationTests.swift"; sourceTree = "<group>"; };
 		84F64BA6239D9CB5000290D1 /* ActionSheet+Deprecations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Deprecations.swift"; sourceTree = "<group>"; };
 		OBJ_10 /* ActionSheet+Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Presenter.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* SingleSelectItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectItem.swift; sourceTree = "<group>"; };
@@ -126,78 +116,13 @@
 		OBJ_106 /* SectionMagin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMagin.swift; sourceTree = "<group>"; };
 		OBJ_107 /* SectionTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitle.swift; sourceTree = "<group>"; };
 		OBJ_11 /* ActionSheet+Scroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Scroll.swift"; sourceTree = "<group>"; };
-		OBJ_111 /* ActionSheet+PresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+PresenterTests.swift"; sourceTree = "<group>"; };
-		OBJ_112 /* ActionSheetItemHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItemHandlerTests.swift; sourceTree = "<group>"; };
-		OBJ_113 /* ActionSheetMarginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetMarginTests.swift; sourceTree = "<group>"; };
-		OBJ_114 /* ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetTests.swift; sourceTree = "<group>"; };
-		OBJ_116 /* ActionSheet+AppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+AppearanceTests.swift"; sourceTree = "<group>"; };
-		OBJ_117 /* ActionSheetAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetAppearanceTests.swift; sourceTree = "<group>"; };
-		OBJ_118 /* ActionSheetColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetColorTests.swift; sourceTree = "<group>"; };
-		OBJ_119 /* UIColor+ActionSheetColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ActionSheetColorTests.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* ActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheet.swift; sourceTree = "<group>"; };
-		OBJ_121 /* UIEdgeInsets+HiddenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+HiddenTests.swift"; sourceTree = "<group>"; };
-		OBJ_122 /* UIView+SubviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SubviewsTests.swift"; sourceTree = "<group>"; };
-		OBJ_123 /* UIViewController+RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RootViewControllerTests.swift"; sourceTree = "<group>"; };
-		OBJ_126 /* CancelButton+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CancelButton+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_127 /* DestructiveButton+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DestructiveButton+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_128 /* MenuButtonTests+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuButtonTests+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_129 /* OkButton+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OkButton+ActionSheetTests.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* ActionSheetItemHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItemHandler.swift; sourceTree = "<group>"; };
-		OBJ_131 /* CollectionItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_132 /* CustomItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_133 /* LinkItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinkItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_134 /* MultiSelectItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiSelectItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_135 /* MultiSelectToggleItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiSelectToggleItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_136 /* SelectItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SelectItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_137 /* SingleSelectItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SingleSelectItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_138 /* MenuItem+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+ActionSheetTests.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* ActionSheetMargin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetMargin.swift; sourceTree = "<group>"; };
-		OBJ_140 /* MenuTitle+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuTitle+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_141 /* SectionMargin+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionMargin+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_142 /* SectionTitle+ActionSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionTitle+ActionSheetTests.swift"; sourceTree = "<group>"; };
-		OBJ_144 /* MockActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockActionSheet.swift; sourceTree = "<group>"; };
-		OBJ_145 /* MockActionSheetAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockActionSheetAppearance.swift; sourceTree = "<group>"; };
-		OBJ_146 /* MockActionSheetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockActionSheetPresenter.swift; sourceTree = "<group>"; };
-		OBJ_147 /* MockNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationCenter.swift; sourceTree = "<group>"; };
-		OBJ_148 /* MockTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableView.swift; sourceTree = "<group>"; };
-		OBJ_149 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
-		OBJ_151 /* ActionSheetPopoverPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetPopoverPresenterTests.swift; sourceTree = "<group>"; };
-		OBJ_152 /* ActionSheetStandardPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetStandardPresenterTests.swift; sourceTree = "<group>"; };
-		OBJ_154 /* ActionSheetBackgroundViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetBackgroundViewTests.swift; sourceTree = "<group>"; };
-		OBJ_155 /* ActionSheetHeaderContainerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetHeaderContainerViewTests.swift; sourceTree = "<group>"; };
-		OBJ_156 /* ActionSheetStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetStackViewTests.swift; sourceTree = "<group>"; };
-		OBJ_157 /* ActionSheetTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetTableViewTests.swift; sourceTree = "<group>"; };
 		OBJ_16 /* ActionSheet+Appearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ActionSheet+Appearance.swift"; sourceTree = "<group>"; };
-		OBJ_160 /* ActionSheetItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetItemCellTests.swift; sourceTree = "<group>"; };
-		OBJ_162 /* ActionSheetLinkItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetLinkItemCellTests.swift; sourceTree = "<group>"; };
-		OBJ_163 /* ActionSheetSelectItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetSelectItemCellTests.swift; sourceTree = "<group>"; };
-		OBJ_165 /* Menu+AlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+AlertControllerTests.swift"; sourceTree = "<group>"; };
-		OBJ_166 /* MenuItem+AlertControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+AlertControllerTests.swift"; sourceTree = "<group>"; };
-		OBJ_168 /* ContextMenuDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenuDelegateTests.swift; sourceTree = "<group>"; };
-		OBJ_169 /* Menu+ContextMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+ContextMenuTests.swift"; sourceTree = "<group>"; };
 		OBJ_17 /* ActionSheetAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetAppearance.swift; sourceTree = "<group>"; };
-		OBJ_170 /* MenuItem+ContextMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+ContextMenuTests.swift"; sourceTree = "<group>"; };
-		OBJ_173 /* NSObject+ClassNameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassNameTests.swift"; sourceTree = "<group>"; };
-		OBJ_176 /* CancelButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelButtonTests.swift; sourceTree = "<group>"; };
-		OBJ_177 /* DestructiveButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestructiveButtonTests.swift; sourceTree = "<group>"; };
-		OBJ_178 /* MenuButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonTests.swift; sourceTree = "<group>"; };
-		OBJ_179 /* OkButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OkButtonTests.swift; sourceTree = "<group>"; };
 		OBJ_18 /* ActionSheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionSheetColor.swift; sourceTree = "<group>"; };
-		OBJ_181 /* CollectionItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemTests.swift; sourceTree = "<group>"; };
-		OBJ_182 /* CustomItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemTests.swift; sourceTree = "<group>"; };
-		OBJ_183 /* LinkItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkItemTests.swift; sourceTree = "<group>"; };
-		OBJ_184 /* MultiSelectItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectItemTests.swift; sourceTree = "<group>"; };
-		OBJ_185 /* MultiSelectToggleItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectToggleItemTests.swift; sourceTree = "<group>"; };
-		OBJ_186 /* SelectItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemTests.swift; sourceTree = "<group>"; };
-		OBJ_187 /* SingleSelectItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectItemTests.swift; sourceTree = "<group>"; };
-		OBJ_189 /* MenuItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTests.swift; sourceTree = "<group>"; };
 		OBJ_19 /* UIColor+ActionSheetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ActionSheetColor.swift"; sourceTree = "<group>"; };
-		OBJ_190 /* MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTests.swift; sourceTree = "<group>"; };
-		OBJ_192 /* MockMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMenuItem.swift; sourceTree = "<group>"; };
-		OBJ_194 /* MenuTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleTests.swift; sourceTree = "<group>"; };
-		OBJ_195 /* SectionMarginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionMarginTests.swift; sourceTree = "<group>"; };
-		OBJ_196 /* SectionTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleTests.swift; sourceTree = "<group>"; };
-		OBJ_197 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_21 /* UIEdgeInsets+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Hidden.swift"; sourceTree = "<group>"; };
 		OBJ_22 /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		OBJ_23 /* UIViewController+RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+RootViewController.swift"; sourceTree = "<group>"; };
@@ -276,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				84F64BA6239D9CB5000290D1 /* ActionSheet+Deprecations.swift */,
-				8422CB74239DCBEB00251D31 /* Menu+Deprecations.swift */,
 			);
 			path = Deprecations;
 			sourceTree = "<group>";
@@ -311,129 +235,6 @@
 			path = Titles;
 			sourceTree = "<group>";
 		};
-		OBJ_108 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_109 /* SheeeeeeeeetTests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_109 /* SheeeeeeeeetTests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_110 /* ActionSheet */,
-				OBJ_164 /* AlertController */,
-				OBJ_167 /* ContextMenu */,
-				OBJ_172 /* Extensions */,
-				OBJ_174 /* Menu */,
-				OBJ_197 /* XCTestManifests.swift */,
-			);
-			name = SheeeeeeeeetTests;
-			path = Tests/SheeeeeeeeetTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_110 /* ActionSheet */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_115 /* Appearance */,
-				OBJ_158 /* Cells */,
-				OBJ_120 /* Extensions */,
-				OBJ_124 /* Menu */,
-				OBJ_143 /* Mocks */,
-				OBJ_150 /* Presenters */,
-				OBJ_153 /* Views */,
-				84F64BA4239D99D6000290D1 /* ActionSheet+ConfigurationTests.swift */,
-				OBJ_111 /* ActionSheet+PresenterTests.swift */,
-				OBJ_112 /* ActionSheetItemHandlerTests.swift */,
-				OBJ_113 /* ActionSheetMarginTests.swift */,
-				OBJ_114 /* ActionSheetTests.swift */,
-			);
-			path = ActionSheet;
-			sourceTree = "<group>";
-		};
-		OBJ_115 /* Appearance */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_116 /* ActionSheet+AppearanceTests.swift */,
-				OBJ_117 /* ActionSheetAppearanceTests.swift */,
-				OBJ_118 /* ActionSheetColorTests.swift */,
-				OBJ_119 /* UIColor+ActionSheetColorTests.swift */,
-			);
-			path = Appearance;
-			sourceTree = "<group>";
-		};
-		OBJ_120 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_121 /* UIEdgeInsets+HiddenTests.swift */,
-				OBJ_122 /* UIView+SubviewsTests.swift */,
-				OBJ_123 /* UIViewController+RootViewControllerTests.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		OBJ_124 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_138 /* MenuItem+ActionSheetTests.swift */,
-				OBJ_125 /* Buttons */,
-				OBJ_130 /* Items */,
-				OBJ_139 /* Titles */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		OBJ_125 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_126 /* CancelButton+ActionSheetTests.swift */,
-				OBJ_127 /* DestructiveButton+ActionSheetTests.swift */,
-				OBJ_128 /* MenuButtonTests+ActionSheetTests.swift */,
-				OBJ_129 /* OkButton+ActionSheetTests.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		OBJ_130 /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_131 /* CollectionItem+ActionSheetTests.swift */,
-				OBJ_132 /* CustomItem+ActionSheetTests.swift */,
-				8422CB80239E21FC00251D31 /* DestructiveItem+ActionSheetTests.swift */,
-				OBJ_133 /* LinkItem+ActionSheetTests.swift */,
-				OBJ_134 /* MultiSelectItem+ActionSheetTests.swift */,
-				OBJ_135 /* MultiSelectToggleItem+ActionSheetTests.swift */,
-				84A24ED7236C6FAF00DB060C /* SecondaryActionItem+ActionSheetTests.swift */,
-				OBJ_136 /* SelectItem+ActionSheetTests.swift */,
-				OBJ_137 /* SingleSelectItem+ActionSheetTests.swift */,
-			);
-			path = Items;
-			sourceTree = "<group>";
-		};
-		OBJ_139 /* Titles */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_140 /* MenuTitle+ActionSheetTests.swift */,
-				OBJ_141 /* SectionMargin+ActionSheetTests.swift */,
-				OBJ_142 /* SectionTitle+ActionSheetTests.swift */,
-			);
-			path = Titles;
-			sourceTree = "<group>";
-		};
-		OBJ_143 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_144 /* MockActionSheet.swift */,
-				OBJ_145 /* MockActionSheetAppearance.swift */,
-				OBJ_146 /* MockActionSheetPresenter.swift */,
-				OBJ_147 /* MockNotificationCenter.swift */,
-				OBJ_148 /* MockTableView.swift */,
-				OBJ_149 /* MockViewController.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
 		OBJ_15 /* Appearance */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,124 +244,6 @@
 				OBJ_19 /* UIColor+ActionSheetColor.swift */,
 			);
 			path = Appearance;
-			sourceTree = "<group>";
-		};
-		OBJ_150 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_151 /* ActionSheetPopoverPresenterTests.swift */,
-				8422CB61239DAF9B00251D31 /* ActionSheetPopoverPresenter+PresentationDelegateTests.swift */,
-				OBJ_152 /* ActionSheetStandardPresenterTests.swift */,
-				8422CB64239DB6F600251D31 /* ActionSheetPresenterBaseTests.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
-		OBJ_153 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_154 /* ActionSheetBackgroundViewTests.swift */,
-				OBJ_155 /* ActionSheetHeaderContainerViewTests.swift */,
-				OBJ_156 /* ActionSheetStackViewTests.swift */,
-				OBJ_157 /* ActionSheetTableViewTests.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		OBJ_158 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_160 /* ActionSheetItemCellTests.swift */,
-				OBJ_162 /* ActionSheetLinkItemCellTests.swift */,
-				OBJ_163 /* ActionSheetSelectItemCellTests.swift */,
-				84A24ED3236C6DB500DB060C /* ActionSheetSecondaryActionItemTests.swift */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		OBJ_164 /* AlertController */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_165 /* Menu+AlertControllerTests.swift */,
-				OBJ_166 /* MenuItem+AlertControllerTests.swift */,
-			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		OBJ_167 /* ContextMenu */ = {
-			isa = PBXGroup;
-			children = (
-				8422CB6F239DC81800251D31 /* ContextMenu+ConfigurationTests.swift */,
-				OBJ_168 /* ContextMenuDelegateTests.swift */,
-				OBJ_169 /* Menu+ContextMenuTests.swift */,
-				OBJ_170 /* MenuItem+ContextMenuTests.swift */,
-			);
-			path = ContextMenu;
-			sourceTree = "<group>";
-		};
-		OBJ_172 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_173 /* NSObject+ClassNameTests.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		OBJ_174 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_175 /* Buttons */,
-				OBJ_180 /* Items */,
-				OBJ_191 /* Mocks */,
-				OBJ_193 /* Titles */,
-				OBJ_189 /* MenuItemTests.swift */,
-				OBJ_190 /* MenuTests.swift */,
-			);
-			path = Menu;
-			sourceTree = "<group>";
-		};
-		OBJ_175 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_176 /* CancelButtonTests.swift */,
-				OBJ_177 /* DestructiveButtonTests.swift */,
-				OBJ_178 /* MenuButtonTests.swift */,
-				OBJ_179 /* OkButtonTests.swift */,
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		OBJ_180 /* Items */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_181 /* CollectionItemTests.swift */,
-				OBJ_182 /* CustomItemTests.swift */,
-				OBJ_183 /* LinkItemTests.swift */,
-				OBJ_184 /* MultiSelectItemTests.swift */,
-				OBJ_185 /* MultiSelectToggleItemTests.swift */,
-				OBJ_186 /* SelectItemTests.swift */,
-				OBJ_187 /* SingleSelectItemTests.swift */,
-				84A24ECC236C66CD00DB060C /* SecondaryActionItemTests.swift */,
-			);
-			path = Items;
-			sourceTree = "<group>";
-		};
-		OBJ_191 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_192 /* MockMenuItem.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		OBJ_193 /* Titles */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_194 /* MenuTitleTests.swift */,
-				OBJ_195 /* SectionMarginTests.swift */,
-				OBJ_196 /* SectionTitleTests.swift */,
-			);
-			path = Titles;
 			sourceTree = "<group>";
 		};
 		OBJ_20 /* Extensions */ = {
@@ -658,7 +341,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_7 /* Sources */,
-				OBJ_108 /* Tests */,
 				OBJ_297 /* Products */,
 				OBJ_304 /* Resources */,
 				OBJ_306 /* Fastlane */,
@@ -926,7 +608,6 @@
 				OBJ_506 /* MenuButton.swift in Sources */,
 				OBJ_507 /* OkButton.swift in Sources */,
 				OBJ_508 /* CollectionItem.swift in Sources */,
-				8422CB76239DCBFD00251D31 /* Menu+Deprecations.swift in Sources */,
 				OBJ_509 /* CustomItem.swift in Sources */,
 				OBJ_510 /* LinkItem.swift in Sources */,
 				OBJ_511 /* MultiSelectItem.swift in Sources */,
