@@ -118,11 +118,33 @@ open class ActionSheet: UIViewController {
         preferredContentSize.width = preferredPopoverWidth
     }
     
+    let effect = UIBlurEffect(style: .light)
+    let resizingMask: UIView.AutoresizingMask = [.flexibleWidth, .flexibleHeight]
+    
     open func setupViews() {
         backgroundView.setup(in: self)
         stackView.setup(in: self)
         itemsTableViewHeight = itemsTableView.setup(in: self, itemHandler: itemHandler, heightPriority: 900)
         buttonsTableViewHeight = buttonsTableView.setup(in: self, itemHandler: buttonHandler)
+        
+        let itemsBackgroundView = UIView(frame: view.bounds)
+        itemsBackgroundView.autoresizingMask = resizingMask
+        itemsBackgroundView.addSubview(self.buildBlurView())
+        itemsTableView.backgroundView = itemsBackgroundView
+        itemsTableView.separatorEffect = UIVibrancyEffect(blurEffect: effect)
+        
+        let buttonsBackgroundView = UIView(frame: view.bounds)
+        buttonsBackgroundView.autoresizingMask = resizingMask
+        buttonsBackgroundView.addSubview(self.buildBlurView())
+        buttonsTableView.backgroundView = buttonsBackgroundView
+        buttonsTableView.separatorEffect = UIVibrancyEffect(blurEffect: effect)
+    }
+    
+    func buildBlurView() -> UIVisualEffectView {
+        let blurView = UIVisualEffectView(effect: effect)
+        blurView.frame = view.bounds
+        blurView.autoresizingMask = resizingMask
+        return blurView
     }
     
     open func setup(items: [MenuItem]) {

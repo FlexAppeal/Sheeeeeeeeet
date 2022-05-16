@@ -85,7 +85,7 @@ open class ActionSheetStandardPresenter: ActionSheetPresenterBase {
         UIView.animate(
             withDuration: animationDuration,
             delay: animationDelay,
-            options: [.curveEaseOut],
+            options: [.curveEaseInOut],
             animations: animation) { _ in completion?() }
     }
     
