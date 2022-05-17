@@ -78,7 +78,10 @@ open class ActionSheetItemHandler: NSObject, UITableViewDataSource, UITableViewD
         case .items:
             if let headerView = actionSheet?.headerView {
                 if mutatedIndexPath.row == 0 {
+                    headerView.backgroundColor = .clear
                     let cell = UITableViewCell()
+                    cell.backgroundColor = .clear
+                    cell.contentView.backgroundColor = .clear
                     cell.contentView.addSubview(headerView, fill: true)
                     cell.selectionStyle = .none
                     cell.separatorInset = .zero
