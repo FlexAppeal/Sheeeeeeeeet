@@ -56,6 +56,7 @@ open class ActionSheetStandardPresenter: ActionSheetPresenterBase {
         addBackgroundViewTapAction(to: sheet.backgroundView)
         presentBackgroundView()
         presentActionSheet(completion: completion)
+        vc.view.endEditing(true)
     }
     
     open override func refreshActionSheet() {
