@@ -33,9 +33,10 @@ extension ActionSheet {
     static func defaultPresenter(
         forIdiom idiom: UIUserInterfaceIdiom,
         traits: UITraitCollection?) -> ActionSheetPresenter {
-        if idiom == .phone { return ActionSheetStandardPresenter() }
-        let sizeClass = traits?.horizontalSizeClass ?? .compact
-        let isCompact = sizeClass == .compact
-        return isCompact ? ActionSheetStandardPresenter() : ActionSheetPopoverPresenter()
+            return ActionSheetStandardPresenter()
+//        if idiom == .phone { return ActionSheetStandardPresenter() }
+//        let sizeClass = traits?.horizontalSizeClass ?? .compact
+//        let isCompact = sizeClass == .compact
+//        return isCompact ? ActionSheetStandardPresenter() : ActionSheetPopoverPresenter()
     }
 }
